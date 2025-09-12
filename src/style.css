@@ -77,7 +77,7 @@ h1 {
 }
 
 .card .back {
-    background-image: url('./images/cover.png');
+    background-image: url('./assets/hagao_pattern_colored.png');
     background-position: center center;
     background-size: cover;
     backface-visibility: hidden;
