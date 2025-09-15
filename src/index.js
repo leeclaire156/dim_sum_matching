@@ -54,17 +54,19 @@ function flipCard() {
     }
 
     secondCard = this;
-    score++;
-    document.querySelector(".score").textContent = score;
     lockBoard = true;
-
-    checkForMatch();
+    const isMatch = checkForMatch();
+    if (isMatch) {
+        score++;
+        document.querySelector(".score").textContent = score;
+    }
 }
 
 function checkForMatch() {
     const isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
     isMatch ? disableCards() : unflipCards();
+    return isMatch;
 }
 
 function disableCards() {
