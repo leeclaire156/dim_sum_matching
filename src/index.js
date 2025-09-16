@@ -6,6 +6,8 @@ let score = 0;
 
 document.querySelector(".score").textContent = score;
 
+//current bug: score increases regardless of a proper match between image and name
+//current bug: some repeated images
 fetch("data/cards.json")
   .then(response => response.json())
   .then(data => {
@@ -31,6 +33,7 @@ function shuffleCards() {
 
 function generateCards() {
     for (let card of cards) {
+        console.log(card);
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
         cardElement.setAttribute("data-name", card.name);
