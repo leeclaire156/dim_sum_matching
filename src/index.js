@@ -6,10 +6,14 @@ let score = 0;
 
 document.querySelector(".score").textContent = score;
 
+//current bug: score increases regardless of a proper match between image and name
+//current bug: some repeated images
 fetch("data/cards.json")
   .then(response => response.json())
   .then(data => {
-    cards = [...data, ...data];
+    const showImageData = data.map(card => ({...card, showImage: true}));
+    const showNameData = data.map(card => ({...card, showImage: false}));
+    cards = [...showImageData, ...showNameData];
     shuffleCards();
     generateCards();
   });
@@ -32,11 +36,19 @@ function generateCards() {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
         cardElement.setAttribute("data-name", card.name);
-        cardElement.innerHTML = `
+        if (card.showImage === true) {
+            cardElement.innerHTML = `
+                <div class="front">
+                    <img class="front-image" src="${card.image}">
+                </div>
+                <div class="back"></div>`;
+        } else {
+            cardElement.innerHTML = `
             <div class="front">
-                <img class="front-image" src="${card.image}">
+                <div class="front-name">${card.name}</div>
             </div>
             <div class="back"></div>`;
+        }
         gridContainer.appendChild(cardElement);
         cardElement.addEventListener('click', flipCard);
     }
