@@ -6,8 +6,6 @@ let score = 0;
 
 document.querySelector(".score").textContent = score;
 
-//current bug: score increases regardless of a proper match between image and name
-//current bug: some repeated images
 fetch("data/cards.json")
   .then(response => response.json())
   .then(data => {
@@ -75,6 +73,9 @@ function flipCard() {
 }
 
 function checkForMatch() {
+    console.log(firstCard.dataset.name)
+    console.log(secondCard.dataset.name)
+
     const isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
     isMatch ? disableCards() : unflipCards();
