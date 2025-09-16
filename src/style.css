@@ -54,17 +54,15 @@ h1 {
 }
 
 .front-image{
-    width: 100px;
-    height: 100px;
+    height: 100%;
 }
 
 .front-name{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 8px;
     color: black;
 }
-
 
 .card.flipped {
     transform: rotateY(180deg);
@@ -79,6 +77,7 @@ h1 {
     left: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .card .front {
