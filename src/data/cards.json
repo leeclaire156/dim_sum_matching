@@ -3,105 +3,105 @@
         "image": "./assets/cards/caa1siu1baau1.jpg",
         "name": "叉燒包",
         "pronunciation": "caa1 siu1 baau1",
-        "english name": "Char siu bao, Barbecued pork bun",
+        "english_name": "Char siu bao, Barbecued pork bun",
         "description": "Bun with barbecued pork filling steamed to be white and fluffy"
     },
     {
         "image": "./assets/cards/coeng2fan2.jpg",
         "name": "腸粉",
         "pronunciation": "coeng2 fan2",
-        "english name": "Rice noodle roll",
+        "english_name": "Rice noodle roll",
         "description": "Steamed rice noodles with or without meat or vegetable fillings, served with sweet soy sauce"
     },
     {
         "image": "./assets/cards/daan6taat1.jpg",
         "name": "蛋撻",
         "pronunciation": "daan6 taat1",
-        "english name": "Egg tart",
+        "english_name": "Egg tart",
         "description": "Baked tart with egg custard filling"
     },
     {
         "image": "./assets/cards/fung6zaau2.jpg",
         "name": "鳳爪",
         "pronunciation": "fung6 zaau2",
-        "english name": "Chicken feet, Phoenix claws",
+        "english_name": "Chicken feet, Phoenix claws",
         "description": "Deep fried, boiled, and then steamed chicken feet with 豆豉 dau6si6 (fermented black beans) sauce"
     },
     {
         "image": "./assets/cards/gaai3laan4.jpg",
         "name": "芥蘭",
         "pronunciation": "gaai3 laan4",
-        "english name": "Chinese broccoli, Gai lan",
+        "english_name": "Chinese broccoli, Gai lan",
         "description": "Steamed vegetables served with oyster sauce and garlic"
     },
     {
         "image": "./assets/cards/gam1cin4tou5.jpg",
         "name": "金錢肚",
         "pronunciation": "gam1 cin4 tou5",
-        "english name": "Honeycomb beef tripe, Reticulum beef tripe",
+        "english_name": "Honeycomb beef tripe, Reticulum beef tripe",
         "description": ""
     },
     {
         "image": "./assets/cards/gau2coi3gaau2.jpg",
         "name": "韭菜餃",
         "pronunciation": "gau2 coi3 gaau2",
-        "english name": "Chive dumpling",
+        "english_name": "Chive dumpling",
         "description": "Steamed dumpling with Chinese chives"
     },
     {
         "image": "./assets/cards/guk1faa1caa4.jpg",
         "name": "菊花茶",
         "pronunciation": "guk1 faa1 caa4",
-        "english name": "Chrysanthemum tea",
+        "english_name": "Chrysanthemum tea",
         "description": ""
     },
     {
         "image": "./assets/cards/haa1gaau2.jpg",
         "name": "蝦餃",
         "pronunciation": "haa1 gaau2",
-        "english name": "Har gow, Shrimp dumpling",
+        "english_name": "Har gow, Shrimp dumpling",
         "description": "Steamed dumpling with shrimp (and often bamboo shoots) filling wrapped in a translucent wrapper made from wheat and tapioca starch"
     },
     {
         "image": "./assets/cards/lo4baak6gou1.jpg",
         "name": "蘿蔔糕",
         "pronunciation": "lo4 baak6 gou1",
-        "english name": "Turnip cake, Radish cake",
+        "english_name": "Turnip cake, Radish cake",
         "description": "Shredded white radish, bits of dried shrimp, Chinese sausage and mushroom that is steamed, sliced, and pan-fried"
     },
     {
         "image": "./assets/cards/ngau4baak3jip6.jpg",
         "name": "牛百葉",
         "pronunciation": "ngau4 baak3 jip6",
-        "english name": "Omasum beef tripe",
+        "english_name": "Omasum beef tripe",
         "description": ""
     },
     {
         "image": "./assets/cards/siu1maai2.jpg",
         "name": "烧卖",
         "pronunciation": "siu1 maai2",
-        "english name": "Siu mai, Pork and shrimp dumpling",
+        "english_name": "Siu mai, Pork and shrimp dumpling",
         "description": "Steamed dumplings with pork and prawns, usually topped off with crab roe and mushroom"
     },
     {
         "image": "./assets/cards/wu1lung2caa4.jpg",
         "name": "乌龙茶",
         "pronunciation": "wu1 lung2 caa4",
-        "english name": "Oolong tea",
+        "english_name": "Oolong tea",
         "description": ""
     },
     {
         "image": "./assets/cards/wu6gok2.jpg",
         "name": "芋角",
         "pronunciation": "wu6 gok2",
-        "english name": "Taro dumpling",
+        "english_name": "Taro dumpling",
         "description": "Deep-fried dumpling made with mashed taro and stuffed with diced mushrooms, shrimp and pork"
     },
     {
         "image": "./assets/cards/zin1deoi1.jpg",
         "name": "煎堆",
         "pronunciation": "zin1 deoi1",
-        "english name": "Sesame ball",
+        "english_name": "Sesame ball",
         "description": "Deep-fried chewy dough with various fillings (lotus seed, black bean, red bean pastes) coated in sesame seeds"
     }
 ]
