@@ -10,7 +10,7 @@
       <router-view></router-view>
     </main>
     <footer>
-      <p>&copy; 2024 My Vue App</p>
+      <p>&copy; 2024 Vue App Developed by Claire Lee</p>
     </footer>
   </div>
 </template>
@@ -36,10 +36,17 @@ export default {
   nav {
     padding: 30px;
   }
+
   nav a {
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
     padding: 0 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;      // stack vertically  
+    align-items: center;         // center horizontally
   }
 </style>
