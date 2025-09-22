@@ -6,3 +6,9 @@ export interface card {
   description: string;
   showImage?: boolean;
 }
+
+export interface CardWithState extends card {
+  showImage: boolean;
+  flipped: boolean;
+  image: string;
+}
