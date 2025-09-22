@@ -21,7 +21,7 @@
   <MatchModal
     :card="matchedCard"
     :show="showMatchModal"
-    @close="showMatchModal = false"
+    @close="onModalIncorrect"
     @match-correct="onModalCorrect"
   />
 </template>
@@ -116,6 +116,11 @@
   // User typed the correct pronunciation
   function onModalCorrect() {
     increaseScore();
+    showMatchModal.value = false;
+    disableCards();
+  }
+
+  function onModalIncorrect() {
     showMatchModal.value = false;
     disableCards();
   }
