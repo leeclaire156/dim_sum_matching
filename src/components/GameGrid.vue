@@ -18,26 +18,28 @@
       <div class="back"></div>
     </div>
   </div>
+  <MatchModal
+    :card="matchedCard"
+    :show="showMatchModal"
+    @close="showMatchModal = false"
+    @match-correct="onModalCorrect"
+  />
 </template>
 
 <script lang="ts" setup>
   import { ref, onMounted } from 'vue';
-  import type { card } from '@/types/types';
-  import data from '../data/cards.json';
-
+  import type { CardWithState } from '@/types/types';
+  import data from '@/data/cards.json';
+  import MatchModal from '@/components/matchModal.vue';
   import { useGameState } from '@/composable/useGameState';
   const { resetScore, increaseScore } = useGameState(); 
-
-  interface CardWithState extends card {
-    showImage: boolean;
-    flipped: boolean;
-    image: string;
-  }
 
   const cards = ref<CardWithState[]>([]);
   const firstCard = ref<CardWithState | null>(null);
   const secondCard = ref<CardWithState | null>(null);
   const lockBoard = ref(false);
+  const showMatchModal = ref(false);
+  const matchedCard = ref<CardWithState | null>(null);
 
   function loadData() {
     const relativePath = '../assets/cards/';
@@ -83,8 +85,9 @@
 
     const isMatch = checkForMatch(firstCard.value, secondCard.value);
     if (isMatch) {
-      disableCards();
       increaseScore();
+      matchedCard.value = card;
+      showMatchModal.value = true;
     } else {
       unflipCards();
     }
@@ -109,6 +112,14 @@
       resetBoardValues();
     }, 1000);
   }
+
+  // User typed the correct pronunciation
+  function onModalCorrect() {
+    increaseScore();
+    showMatchModal.value = false;
+    disableCards();
+  }
+
 
   function unflipAllCards() {
     // Set flipped = false for all currently flipped cards
