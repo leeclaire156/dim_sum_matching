@@ -1,6 +1,6 @@
 <template>
   <div class="title-page">
-    <h1>Welcome to My Vue App!</h1>
+    <h1>Welcome to Cart-to-Card!</h1>
     <p>This is the homepage content.</p>
     <!-- Other homepage specific content -->
   </div>

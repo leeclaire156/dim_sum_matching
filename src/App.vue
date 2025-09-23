@@ -10,7 +10,7 @@
       <router-view></router-view>
     </main>
     <footer>
-      <p>&copy; 2024 Vue App Developed by Claire Lee</p>
+      <p>&copy; Cart-to-Card is a 2024 Vue App Developed by Claire Lee</p>
     </footer>
   </div>
 </template>
