@@ -1,18 +1,20 @@
 <template>
-  <div id="app">
-    <header>
-      <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/play">Game</router-link>
-      </nav>
-    </header>
-    <main>
-      <router-view></router-view>
-    </main>
-    <footer>
-      <p>&copy; Cart-to-Card is a 2024 Vue App Developed by Claire Lee</p>
-    </footer>
-  </div>
+  <v-app id="app">
+    <v-main>
+      <header>
+        <nav>
+          <router-link to="/">Home</router-link>
+          <router-link to="/play">Game</router-link>
+        </nav>
+      </header>
+      <main>
+        <router-view></router-view>
+      </main>
+      <footer>
+        <p>&copy; Cart-to-Card is a 2024 Vue App Developed by Claire Lee</p>
+      </footer>
+    </v-main>
+  </v-app>
 </template>
 
 <script lang="ts">
