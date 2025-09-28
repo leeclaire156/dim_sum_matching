@@ -79,3 +79,25 @@ This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library wi
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2016-present Vuetify, LLC
+
+
+
+Links to Sources/Inspo
+Title page design:
+http://www.fongsprinting.com/htmlPages/guest_check.html
+http://www.fongsprinting.com/_12_New_Images/guest_check/monterey_palace_guest.png
+http://www.fongsprinting.com/_12_New_Images/guest_check/atlantic_dimsum.png
+http://www.fongsprinting.com/_12_New_Images/guest_check/dimsum_express.png
+http://www.fongsprinting.com/_12_New_Images/guest_check/monterey_palace.png
+http://www.fongsprinting.com/_12_New_Images/guest_check/seafood_palace.png
+http://www.fongsprinting.com/_12_New_Images/guest_check/samwoo.png
+https://acaciafarm.smugmug.com/photos/437667156_fKy8J-XL.jpg
+https://www.google.com/search?sca_esv=99f1a6d769628b16&rlz=1C1RXQR_enUS1096US1096&sxsrf=AE3TifMeucXlywk8purk-LwwFFTRnf3ZEg:1758723418911&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeoJTKjrFjVxydQWqI2NcOhZVmrJB8DQUK5IzxA2fZbQF4YL5sNSRJGgx0e9Z9AxExzjE4_ynshmXB4KOs3cwRUeqSxtyEph1-LMoYoz7AgsxiAlRbfQlh62fpf4TvoMmLeIHIDQBlO9bBf83uliUCcabaD8ejPu9aoigNJtiQ30WOIRP0w&q=dim+sum+check&sa=X&ved=2ahUKEwiKxZGly_GPAxV5EGIAHT1jFY8QtKgLegQIDBAB&biw=1920&bih=945&dpr=1#vhid=wtVxByAOMUyjkM&vssid=mosaic
+
+Chinese window icon:
+https://www.google.com/search?q=circular+chinese+window+design&sca_esv=6df9598451498e66&rlz=1C1RXQR_enUS1096US1096&udm=2&biw=1920&bih=945&sxsrf=AE3TifPFz7gwsR6eHAJBV4kriFYixy_qMw%3A1758728770941&ei=QhLUaKuMOZOi5NoPjvz2uAc&ved=0ahUKEwirtZed3_GPAxUTEVkFHQ6-HXcQ4dUDCBE&uact=5&oq=circular+chinese+window+design&gs_lp=Egtnd3Mtd2l6LWltZyIeY2lyY3VsYXIgY2hpbmVzZSB3aW5kb3cgZGVzaWduSPQvUABYmylwAHgAkAEEmAG8CKABrxSqAQoxNy4yLjEuNy0xuAEDyAEA-AEBmAIMoALTD8ICBxAjGCcYyQLCAgoQABiABBhDGIoFwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICDRAAGIAEGLEDGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgIFEAAYgATCAgQQABgewgIGEAAYChgewgIGEAAYCBgemAMAkgcKMTAuMC4xLjYtMaAHjEmyBwoxMC4wLjEuNi0xuAfTD8IHBTIuNy4zyAca&sclient=gws-wiz-img#vhid=lcjTJK8j4WUJqM&vssid=mosaic
+
+stamps:
+https://www.google.com/search?sca_esv=8b6aaa0e07ec78a3&rlz=1C1RXQR_enUS1096US1096&sxsrf=AE3TifMj1nZOSI7j69xhDmmQ2gQnXBV8tw:1758739432860&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zEMZldv_eRjZ2XLYc5GnVnME7glWodDcaQwvGYJtospyF4hao4VocMoniUVvlzzwRcCLYvfsjPeiuln4CZ9mxRNzMJl71rp-WEM_b89yTboF0wE9FSbwRYrSVuB6YHexvLk_d7r_74zDurdYUrhSbdL5TbQGiA&q=dim+sum+checks&sa=X&ved=2ahUKEwiWt5f5hvKPAxV6GVkFHT_gKeEQtKgLegQIFxAB&biw=958&bih=944&dpr=1#vhid=u_pVY8PI1rr66M&vssid=mosaic
+
+https://live.staticflickr.com/229/463571302_bc2c247daf.jpg
