@@ -1,54 +1,48 @@
 <template>
-  <v-app id="app">
-    <v-main>
-      <header>
-        <nav>
-          <router-link to="/">Home</router-link>
-          <router-link to="/play">Game</router-link>
-        </nav>
-      </header>
-      <main>
-        <router-view></router-view>
-      </main>
-      <footer>
-        <p>&copy; Cart-to-Card is a 2024 Vue App Developed by Claire Lee</p>
-      </footer>
-    </v-main>
+  <v-app class="my-background">
+    <router-view />
   </v-app>
 </template>
 
-<script lang="ts">
-export default {
-  name: 'App'
-}
+<script lang="ts" setup>
+  //
 </script>
 
 <style lang="scss" scoped>
-  #app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+.my-background {
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+  z-index: 1;
+}
 
-  main {
-    flex: 1;              // take all remaining space below header
-    padding: 1rem;
-  }
+.my-background::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 500%;
+  height: 500%;
 
-  nav {
-    padding: 30px;
-  }
+  /* Your big pattern */
+  background-image: url("./assets/hagao_pattern_colored.png");
+  background-repeat: repeat;
+  background-size: 350px;
+  
+  /* Diagonal motion using translate */
+  animation: moveDiagonal 20s linear infinite;
+  transform: rotate(45deg);
+  transform-origin: center;
 
-  nav a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 0 10px;
-  }
+  z-index: 0;
+}
 
-  footer {
-    display: flex;
-    flex-direction: column;      // stack vertically  
-    align-items: center;         // center horizontally
+@keyframes moveDiagonal {
+  from {
+    transform: rotate(45deg) translate(0%, 0%);
   }
+  to {
+    transform: rotate(45deg) translate(10%, -10%);
+  }
+}
 </style>
