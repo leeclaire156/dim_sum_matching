@@ -60,8 +60,8 @@
       </v-row>
 
       <v-row class="d-flex flex-inline">
-        <v-col class="titleText d-flex flex-inline" style="padding: 0px !important; margin: 0px !important;">
-          <v-row style="padding: 0px !important; margin: 0px !important;">
+        <v-col class="titleText d-flex flex-inline pa-0">
+          <v-row class="ma-0">
             <v-col class="d-flex flex-column" style="max-width: 30px; padding: 0px !important; margin: 0px !important;">
               <div class="box d-flex flex-column justify-center align-center" 
               style="font-weight: 600; padding: 0px !important; margin: 0px !important;
@@ -105,38 +105,50 @@
               </div>
             </v-col>
             <v-col  style=" padding: 0px !important; margin: 0px !important;">
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
+              <div class="box d-flex align-center justify-center font-weight-bold" 
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0; border-bottom:0; border-top: 0;">
+                <v-btn :ripple="false" variant="text" elevation="0" block>
+                  Beginner Mode
+                </v-btn>
               </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
+              <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
+                <v-btn :ripple="false" variant="text" elevation="0" block>
+                  Intermediate Mode
+                </v-btn>
               </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
+              <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
+                <v-btn :ripple="false" variant="text" elevation="0" block>
+                  Expert Mode
+                </v-btn>
               </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important;
+              <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important;  color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0;  border-bottom: 0">
+                <v-btn :ripple="false" variant="text" elevation="0" block>
+                  Custom Mode
+                </v-btn>   
               </div>
             </v-col>
             <v-col cols="2" style=" padding: 0px !important; margin: 0px !important;">
               <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-bottom:0; border-top: 0;">
               </div>
               <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-bottom:0;">
               </div>
               <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-bottom:0;">
               </div>
               <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important;
+              style="padding: 0px 0px 0px 0px !important; margin: 0px !important;
                 border: 2.25px solid #ac555360;  border-bottom: 0">
               </div>
             </v-col>
