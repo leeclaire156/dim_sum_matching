@@ -1,7 +1,7 @@
 <template>
-  <v-container class="fill-height" max-width="700" color="myCustomCardColor">
+  <v-container class="fill-height" max-width="700">
     <v-card class="pa-8 menu">
-      <v-row class="d-flex inline-flex titleText ">
+      <v-row class="d-flex inline-flex dark-text-color titleText">
         <v-col cols="4">
           <v-img
             alt="Dim Sum"
@@ -29,7 +29,7 @@
       </v-row>
 
       <v-row class="d-flex flex-inline topRow">
-        <v-col cols="3" class="boxStart">
+        <v-col cols="3" class="border br-0 boxHeight">
           <v-row class="keyText">
             DATE
           </v-row>
@@ -37,7 +37,7 @@
             {{ styledDate() }}
           </v-row>
         </v-col>
-        <v-col cols="3" class="box">
+        <v-col cols="3" class="border br-0 boxHeight">
           <v-row class="keyText">
             TABLE NO
           </v-row>
@@ -45,7 +45,7 @@
             {{ styledTableNumber() }}
           </v-row>
         </v-col>
-        <v-col cols="3" class="box">
+        <v-col cols="3" class="border br-0 boxHeight">
           <v-row class="keyText">
             SERVER
           </v-row>
@@ -53,7 +53,7 @@
             Claire Lee
           </v-row>
         </v-col>
-        <v-col cols="3" class="boxEnd">
+        <v-col cols="3" class="border boxHeight">
           <v-row class="keyText">
             CHECK #
           </v-row>
@@ -63,230 +63,158 @@
         </v-col>
       </v-row>
 
-      <v-row class="d-flex flex-inline">
-        <v-col class="d-flex flex-inline titleText pa-0 ">
-          <v-row class="ma-0">
-            <v-col class="d-flex flex-column pa-0 categories">
-              <div class="box d-flex flex-column justify-center align-center" 
-              style="font-weight: 600; padding: 0px !important; margin: 0px !important;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0; border-top: 0;">
-                <div>
-                  小
-                </div>
-                <div>
-                  A
-                </div>
-              </div>
-              <div class="box d-flex flex-column justify-center align-center" 
-              style="font-weight: 600; padding: 0px !important; margin: 0px !important;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
-                <div>
-                  中
-                </div>
-                <div>
-                  B
-                </div>
-              </div>
-              <div class="box d-flex flex-column justify-center align-center" 
-              style="font-weight: 600; padding: 0px !important; margin: 0px !important;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
-                <div>
-                  大
-                </div>
-                <div>
-                  C
-                </div>
-              </div>
-              <div class="box d-flex flex-column justify-center align-center" 
-              style="font-weight: 600; padding: 0px !important; margin: 0px !important;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom: 0;">
-                <div>
-                  特
-                </div>
-                <div>
-                  D
-                </div>
-              </div>
-            </v-col>
-            <v-col class="pa-0">
-              <div class="box d-flex align-center justify-center font-weight-bold" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0; border-top: 0;">
-                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
-                  Beginner Mode
-                </v-btn>
-              </div>
-              <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
-                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
-                  Intermediate Mode
-                </v-btn>
-              </div>
-              <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
-                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
-                  Expert Mode
-                </v-btn>
-              </div>
-              <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important;  color: #ac555390;
-                border: 2.25px solid #ac555360; border-right: 0;  border-bottom: 0">
-                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
-                  Custom Mode
-                </v-btn>   
-              </div>
-            </v-col>
-            <v-col cols="2" style=" padding: 0px !important; margin: 0px !important;">
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-bottom:0; border-top: 0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 0px 0px 0px !important; margin: 0px !important;
-                border: 2.25px solid #ac555360;  border-bottom: 0">
-              </div>
-            </v-col>
-            <v-col cols="1" style="padding: 0px !important; margin: 0px !important;">
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-                style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                  border: 2.25px solid #ac555360; border-left: 0; border-bottom:0;  border-top: 0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-                style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                  border: 2.25px solid #ac555360; border-left: 0; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-                style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                  border: 2.25px solid #ac555360; border-left: 0; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-                style="padding: 0px 5px 0px 0px !important; margin: 0px !important;
-                  border: 2.25px solid #ac555360; border-left: 0; border-bottom: 0;">
-              </div>
-            </v-col>
-          </v-row>
+      <v-row class="d-flex flex-inline categoriesRow">
+        <v-col class="d-flex flex-column pa-0 dark-text-color categories">
+          <div
+            class="boxHeight d-flex flex-column justify-center align-center border br-0 bb-0 bt-0" 
+            style="font-weight: 600;">
+            <div>小</div>
+            <div>A</div>
+          </div>
+          <div
+            class="boxHeight d-flex flex-column justify-center align-center border br-0 bb-0" 
+            style="font-weight: 600;">
+            <div>中</div>
+            <div>B</div>
+          </div>
+          <div
+            class="boxHeight d-flex flex-column justify-center align-center border br-0 bb-0"
+            style="font-weight: 600;">
+            <div>大</div>
+            <div>C</div>
+          </div>
+          <div class="boxHeight d-flex flex-column justify-center align-center border br-0" 
+            style="font-weight: 600;">
+            <div>特</div>
+            <div>D</div>
+          </div>
+        </v-col>
+        <v-col class="pa-0 difficultyButtons">
+          <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0 bb-0 bt-0">
+            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
+              Beginner Mode
+            </v-btn>
+          </div>
+          <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0 bb-0">
+            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
+              Intermediate Mode
+            </v-btn>
+          </div>
+          <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0 bb-0">
+            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
+              Expert Mode
+            </v-btn>
+          </div>
+          <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0">
+            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
+              Custom Mode
+            </v-btn>   
+          </div>
+        </v-col>
+        <v-col cols="2" class="pa-0">
+          <div class="boxHeight border bb-0 bt-0"></div>
+          <div class="boxHeight border bb-0"></div>
+          <div class="boxHeight border bb-0"></div>
+          <div class="boxHeight border"></div>
+        </v-col>
+        <v-col cols="1" class="pa-0">
+          <div class="boxHeight border bl-0 bb-0 bt-0"></div>
+          <div class="boxHeight border bl-0 bb-0"></div>
+          <div class="boxHeight border bl-0 bb-0"></div>
+          <div class="boxHeight border bl-0"></div>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col
-          style= "border: 2.25px solid #ac555360; border-bottom:0; border-right: 0;">
+
+      <v-row class="d-flex flex-inline emptyRows">
+        <v-col class="pa-0">
+          <div class="smallerBoxHeight border br-0 bb-0 bt-0"></div>
+          <div class="smallerBoxHeight border br-0 bb-0"></div>
+          <div class="smallerBoxHeight border br-0 bb-0"></div>
         </v-col>
-        <v-col cols="2"
-          style= "border: 2.25px solid #ac555360; border-bottom:0;">
+        <v-col cols="2" class="pa-0">
+          <div class="smallerBoxHeight border bb-0 bt-0"></div>
+          <div class="smallerBoxHeight border bb-0"></div>
+          <div class="smallerBoxHeight border bb-0"></div>
         </v-col>
-        <v-col cols="1"
-          style= "border: 2.25px solid #ac555360; border-bottom:0; border-left: 0;">
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col
-          style= "border: 2.25px solid #ac555360; border-bottom:0; border-right: 0;">
-        </v-col>
-        <v-col cols="2"
-          style= "border: 2.25px solid #ac555360; border-bottom:0;">
-        </v-col>
-        <v-col cols="1"
-          style= "border: 2.25px solid #ac555360; border-bottom:0; border-left: 0;">
+        <v-col cols="1" class="pa-0">
+          <div class="smallerBoxHeight border bl-0 bb-0 bt-0"></div>
+          <div class="smallerBoxHeight border bl-0 bb-0"></div>
+          <div class="smallerBoxHeight border bl-0 bb-0"></div>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col
-          style= "border: 2.25px solid #ac555360; border-bottom:0; border-right: 0;">
-        </v-col>
-        <v-col cols="2"
-          style= "border: 2.25px solid #ac555360; border-bottom:0;">
-        </v-col>
-        <v-col cols="1"
-          style= "border: 2.25px solid #ac555360; border-bottom:0; border-left: 0;">
-        </v-col>
-      </v-row>
-      <v-row class="d-flex flex-column">
-        <v-row style="margin: 0px; padding: 0px;">
-          <v-col class="d-flex justify-center titleText"
-            style= "border: 2.25px solid #ac555360; border-bottom:0; padding: 3px 0px 0px 0px; font-weight: 500;">
-              TEA SELECTION
+
+      <v-row class="d-flex flex-column dark-text-color teaSelectionRow">
+        <v-row
+          class="d-flex justify-center titleText ma-0 border bb-0"
+          style="padding: 3px 0px 2px 0px; font-weight: 500;">
+          TEA SELECTION
+        </v-row>
+        <v-row class="ma-0 teaRow">
+          <v-col
+            class="d-flex flex-column justify-center titleText border bb-0 br-0 teaColumn1"
+            style="padding: 15px 2px 0px 0px;">
+            <v-row class="d-flex justify-center space-between ma-0">
+              <!-- hoeng1 pin2 -->
+              <div class="chineseTeaName">
+                香片
+              </div>
+              <div class="englishTeaName">
+                Jasmine
+              </div>
+            </v-row>
+            <v-row class="d-flex justify-center space-between ma-0">
+              <!-- wu1 lung2 -->
+              <div class="chineseTeaName">
+                烏龍
+              </div>
+              <div class="englishTeaName">
+                Oolong
+              </div>
+            </v-row>
+            <v-row class="d-flex justify-center space-between ma-0">
+              <!-- sau6 mei2 -->
+              <div class="chineseTeaName">
+                壽眉
+              </div>
+              <div class="englishTeaName">
+                Shou Mei
+              </div>
+            </v-row>
+          </v-col>
+          <v-col
+            class="d-flex flex-column justify-center titleText border bb-0 teaColumn2"
+            style= "padding: 15px 0px 0px 0px">
+            <v-row class="d-flex justify-center space-between ma-0">
+              <!-- pou2 lei2 -->
+              <div class="chineseTeaName">
+                普洱
+              </div>
+              <div class="englishTeaName">
+                Pu Er
+              </div>
+            </v-row>
+            <v-row class="d-flex justify-center space-between ma-0">
+              <!-- tit3 gun1 jam1 -->
+              <div class="chineseTeaName">
+                鐵觀音
+              </div>
+              <div class="englishTeaName">
+                Tieguanyin
+              </div>
+            </v-row>
+            <v-row class="d-flex justify-center space-between ma-0">
+              <!-- guk1 faa1 -->
+              <div class="chineseTeaName">
+                菊花
+              </div>
+              <div class="englishTeaName">
+                Chrysanthemum
+              </div>
+            </v-row>
           </v-col>
         </v-row>
+      </v-row>
         
-        <v-row style="margin: 0px; padding: 0px;">
-          <v-col class="d-flex flex-column justify-center titleText"
-            style= "border: 2.25px solid #ac555360; border-bottom:0; border-right: 0; padding: 10px 2px 0px 0px;">
-              <v-row class="d-flex justify-center space-between"
-                style="padding:0px; margin:0px">
-                <!-- hoeng1 pin2 -->
-                <div class="chineseTeaName">
-                  香片
-                </div>
-                <div class="englishTeaName">
-                  Jasmine
-                </div>
-              </v-row>
-              <v-row class="d-flex justify-center space-between"
-                style="padding:0px; margin:0px">
-                <!-- wu1 lung2 -->
-                <div class="chineseTeaName">
-                  烏龍
-                </div>
-                <div class="englishTeaName">
-                  Oolong
-                </div>
-              </v-row>
-              <v-row class="d-flex justify-center space-between"
-                style="padding:0px; margin:0px">
-                <!-- sau6 mei2 -->
-                <div class="chineseTeaName">
-                  壽眉
-                </div>
-                <div class="englishTeaName">
-                  Shou Mei
-                </div>
-              </v-row>
-          </v-col>
-           <v-col class="d-flex flex-column justify-center titleText"
-            style= "border: 2.25px solid #ac555360; border-bottom:0; padding: 10px 0px 0px 0px">
-              <v-row class="d-flex justify-center space-between"
-                style="padding:0px; margin:0px">
-                <!-- pou2 lei2 -->
-                <div class="chineseTeaName">
-                  普洱
-                </div>
-                <div class="englishTeaName">
-                   Pu Er
-                </div>
-              </v-row>
-              <v-row class="d-flex justify-center space-between"
-                style="padding:0px; margin:0px">
-                <!-- tit3 gun1 jam1 -->
-                <div class="chineseTeaName">
-                  鐵觀音
-                </div>
-                <div class="englishTeaName">
-                  Tieguanyin
-                </div>
-              </v-row>
-              <v-row class="d-flex justify-center space-between"
-                style="padding:0px; margin:0px">
-                <!-- guk1 faa1 -->
-                <div class="chineseTeaName">
-                  菊花
-                </div>
-                <div class="englishTeaName">
-                  Chrysanthemum
-                </div>
-              </v-row>
-          </v-col>
-        </v-row>
-      </v-row>
       <!-- <v-row>
         <v-col cols="12">
           <v-card
@@ -332,7 +260,7 @@
         </v-col>
       </v-row> -->
 
-      <v-row class="d-flex flex-inline">
+      <v-row class="d-flex flex-inline dark-text-color">
         <v-col cols="6" class="titleText d-flex flex-column align-center justify-center" style="border: 2.25px solid  #ac555360; border-right: 0;">
             <div class="thankYouEnglish">
               Thank You!
@@ -341,52 +269,34 @@
               謝謝
             </div>
         </v-col>
-        <v-col cols="6" class="titleText d-flex flex-inline" style="padding: 0px !important; margin: 0px !important;">
-          <v-row style="padding: 0px !important; margin: 0px !important;">
-            <v-col class="d-flex flex-column" style="padding: 0px !important; margin: 0px !important;">
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
+        <v-col cols="6" class="titleText d-flex flex-inline pa-0">
+          <v-row class="ma-0">
+            <v-col class="d-flex flex-column pa-0">
+              <div
+                class="boxHeight d-flex justify-end font-weight-bold border br-0 bb-0 medium-text-color" 
+                style="padding-right: 5px;">
                 SUB TOTAL
               </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
+              <div
+                class="boxHeight d-flex justify-end font-weight-bold border br-0 bb-0 medium-text-color" 
+                style="padding-right: 5px;">
                 TAX
               </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important;
-                border: 2.25px solid #ac555360; border-right: 0;">
+              <div
+                class="boxHeight d-flex justify-end font-weight-bold border br-0" 
+                style="padding-right: 5px;">
                 TOTAL
               </div>
             </v-col>
-            <v-col cols="4" style=" padding: 0px !important; margin: 0px !important;">
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                border: 2.25px solid #ac555360; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-              style="padding: 0px 5px 0px 0px !important; margin: 0px !important;
-                border: 2.25px solid #ac555360;">
-              </div>
+            <v-col cols="4" class="pa-0">
+              <div class="boxHeight border bb-0"></div>
+              <div class="boxHeight border bb-0"></div>
+              <div class="boxHeight border"></div>
             </v-col>
-            <v-col cols="2" style="padding: 0px !important; margin: 0px !important;">
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-                style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                  border: 2.25px solid #ac555360; border-left: 0; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-                style="padding: 0px 5px 0px 0px !important; margin: 0px !important; color: #ac555390;
-                  border: 2.25px solid #ac555360; border-left: 0; border-bottom:0;">
-              </div>
-              <div class="box d-flex justify-end font-weight-bold mr-2" 
-                style="padding: 0px 5px 0px 0px !important; margin: 0px !important;
-                  border: 2.25px solid #ac555360; border-left: 0;">
-              </div>
+            <v-col cols="2" class="pa-0">
+              <div class="boxHeight border bb-0 bl-0"></div>
+              <div class="boxHeight border bb-0 bl-0"></div>
+              <div class="boxHeight border bl-0"></div>
             </v-col>
           </v-row>
         </v-col>
@@ -447,16 +357,62 @@
 <style lang="scss" scoped>
 
   $light-dim-sum-check-red: #ac555360;
+  $medium-dim-sum-check-red: #ac555390;
   $dim-sum-check-red: #AC5553;
   $pen-ink-blue: #1e76da90;
   $stamp-ink-red: #E37076;
 
-  .menu {
-    background-color: #ffffff;
-    color: $pen-ink-blue;
+  
+  .animatedBtn {
+    /* Attach the animation to the button */
+    animation: pulse 2s infinite; 
   }
 
-  .titleText {
+  .backgroundText {
+    font-family: 'Caveat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .border {
+    border: 2.25px solid $light-dim-sum-check-red !important;
+  }
+
+  .bt-0 {
+    border-top: 0 !important;
+  }
+
+  .br-0 {
+    border-right: 0 !important;
+  }
+
+  .bb-0 {
+    border-bottom: 0 !important;
+  }
+
+  .bl-0 {
+    border-left: 0 !important;
+  }
+
+  .boxHeight {
+    height: 4rem;
+  }
+
+  .categories {
+    max-width: 30px;
+  }
+
+  .chineseName {
+    font-weight: bold;
+    font-family: Kaiti;
+  }
+
+  .chineseTeaName {
+    padding-left: 2rem;
+    flex-basis: 50%;
+  }
+
+  .dark-text-color {
     color: $dim-sum-check-red;
   }
 
@@ -464,26 +420,12 @@
     font-weight: 400;
   }
 
-  .chineseName {
-    font-weight: bold;
-    font-family: Kaiti;
-  }
-  
-  .box {
-    height: 65px;
-    border: 2.25px solid $light-dim-sum-check-red;
-    border-right: 0;
+  .englishTeaName {
+    flex-basis: 50%;
   }
 
-  .boxStart {
-    height: 65px;
-    border: 2.25px solid $light-dim-sum-check-red;
-    border-right: 0;
-  }
-
-  .boxEnd {
-    height: 65px;
-    border: 2.25px solid $light-dim-sum-check-red;
+  .smallerBoxHeight {
+    height: 1.5rem;
   }
 
   .keyText {
@@ -492,10 +434,13 @@
     font-weight: 500;
   }
 
-  .backgroundText {
-    font-family: 'Caveat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
+  .medium-text-color {
+    color: $medium-dim-sum-check-red;
+  }
+
+  .menu {
+    background-color: #ffffff;
+    color: $pen-ink-blue;
   }
 
   .thankYouEnglish {
@@ -510,27 +455,9 @@
     font-weight: 600;
   }
 
-  .chineseTeaName {
-    padding-left: 2rem;
-    flex-basis: 50%;
-  }
-
-  .englishTeaName {
-    flex-basis: 50%;
-  }
-
   .topRow > * {
     display: flex;
     padding-left: 1rem;
-  }
-
-  .categories {
-    max-width: 30px;
-  }
-
-  .animatedBtn {
-    /* Attach the animation to the button */
-    animation: pulse 2s infinite; 
   }
 
   /* Define the animation sequence with keyframes */
@@ -545,6 +472,7 @@
       transform: scale(1); /* Return to original size */
     }
   }
+
   // .elevated {
   //   vertical-align: 3px; /* Raises the text 3 pixels above the baseline */
   // }
