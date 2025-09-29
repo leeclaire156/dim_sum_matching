@@ -1,8 +1,8 @@
 <template>
   <v-container class="fill-height" max-width="700" color="myCustomCardColor">
     <v-card class="pa-8 menu">
-      <div class="mb-8 d-flex inline-flex titleText">
-        <div>
+      <v-row class="d-flex inline-flex titleText ">
+        <v-col cols="4">
           <v-img
             alt="Dim Sum"
             contain
@@ -10,10 +10,14 @@
             width="200"
             src="@/assets/menuIcon.png"
           />
-        </div>
-        <div class="text-center">
-          <h1 class="text-h2 chineseName">包你識</h1>
-          <h1 class="text-h2 englishName">Card To Cart</h1>
+        </v-col>
+        <v-col class="text-center">
+          <h1 class="text-h2 chineseName">
+            包你識
+          </h1>
+          <h1 class="text-h2 englishName">
+            Card To Cart
+          </h1>
           <div class="text-body-2 mb-n1" style="font-weight: 500;">
             The object of this game is to teach you how to read off a Dim Sum menu in Cantonese!
             <br />
@@ -21,36 +25,36 @@
             <br />
             Get 1 point for a match, get 2 points if you can type in the right pronunciation with the tones!
           </div>
-        </div>
-      </div>
+        </v-col>
+      </v-row>
 
-      <v-row class="d-flex flex-inline">
-        <v-col cols="3" class="boxStart d-flex">
-          <v-row class="keyText pl-1">
+      <v-row class="d-flex flex-inline topRow">
+        <v-col cols="3" class="boxStart">
+          <v-row class="keyText">
             DATE
           </v-row>
           <v-row class="backgroundText" no-gutters>
             {{ styledDate() }}
           </v-row>
         </v-col>
-        <v-col cols="3" class="box d-flex">
-          <v-row class="keyText pl-1">
+        <v-col cols="3" class="box">
+          <v-row class="keyText">
             TABLE NO
           </v-row>
           <v-row class="backgroundText" no-gutters>
             {{ styledTableNumber() }}
           </v-row>
         </v-col>
-        <v-col cols="3" class="box d-flex">
-          <v-row class="keyText pl-1">
+        <v-col cols="3" class="box">
+          <v-row class="keyText">
             SERVER
           </v-row>
           <v-row class="backgroundText" no-gutters>
             Claire Lee
           </v-row>
         </v-col>
-        <v-col cols="3" class="boxEnd d-flex">
-          <v-row class="keyText pl-1">
+        <v-col cols="3" class="boxEnd">
+          <v-row class="keyText">
             CHECK #
           </v-row>
           <v-row class="backgroundText" no-gutters>
@@ -60,9 +64,9 @@
       </v-row>
 
       <v-row class="d-flex flex-inline">
-        <v-col class="titleText d-flex flex-inline pa-0">
+        <v-col class="d-flex flex-inline titleText pa-0 ">
           <v-row class="ma-0">
-            <v-col class="d-flex flex-column" style="max-width: 30px; padding: 0px !important; margin: 0px !important;">
+            <v-col class="d-flex flex-column pa-0 categories">
               <div class="box d-flex flex-column justify-center align-center" 
               style="font-weight: 600; padding: 0px !important; margin: 0px !important;
                 border: 2.25px solid #ac555360; border-right: 0; border-bottom:0; border-top: 0;">
@@ -104,32 +108,32 @@
                 </div>
               </div>
             </v-col>
-            <v-col  style=" padding: 0px !important; margin: 0px !important;">
+            <v-col class="pa-0">
               <div class="box d-flex align-center justify-center font-weight-bold" 
               style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0; border-bottom:0; border-top: 0;">
-                <v-btn :ripple="false" variant="text" elevation="0" block>
+                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
                   Beginner Mode
                 </v-btn>
               </div>
               <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
               style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
-                <v-btn :ripple="false" variant="text" elevation="0" block>
+                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
                   Intermediate Mode
                 </v-btn>
               </div>
               <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
               style="padding: 0px 0px 0px 0px !important; margin: 0px !important; color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0; border-bottom:0;">
-                <v-btn :ripple="false" variant="text" elevation="0" block>
+                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
                   Expert Mode
                 </v-btn>
               </div>
               <div class="box d-flex align-center justify-center font-weight-bold mr-2" 
               style="padding: 0px 0px 0px 0px !important; margin: 0px !important;  color: #ac555390;
                 border: 2.25px solid #ac555360; border-right: 0;  border-bottom: 0">
-                <v-btn :ripple="false" variant="text" elevation="0" block>
+                <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
                   Custom Mode
                 </v-btn>   
               </div>
@@ -419,6 +423,9 @@
     },
   ]
 
+  //future feature: lock/unlock levels based on players progression
+  const unlocked = true;
+
   //future feature: make it look more like handwriting with some characters having the .elevated class
   const styledCheckNumber = () => {
     const randomCheckNumber = Math.floor(Math.random() * 100000);
@@ -479,11 +486,10 @@
     border: 2.25px solid $light-dim-sum-check-red;
   }
 
-  .box  > .keyText,
-  .boxStart > .keyText,
-  .boxEnd > .keyText {
+  .keyText {
     color: $light-dim-sum-check-red;
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
   }
 
   .backgroundText {
@@ -513,6 +519,32 @@
     flex-basis: 50%;
   }
 
+  .topRow > * {
+    display: flex;
+    padding-left: 1rem;
+  }
+
+  .categories {
+    max-width: 30px;
+  }
+
+  .animatedBtn {
+    /* Attach the animation to the button */
+    animation: pulse 2s infinite; 
+  }
+
+  /* Define the animation sequence with keyframes */
+  @keyframes pulse {
+    0% {
+      transform: scale(1); /* Initial size */
+    }
+    50% {
+      transform: scale(1.1); /* Scale up by 10% */
+    }
+    100% {
+      transform: scale(1); /* Return to original size */
+    }
+  }
   // .elevated {
   //   vertical-align: 3px; /* Raises the text 3 pixels above the baseline */
   // }
