@@ -91,24 +91,52 @@
         </v-col>
         <v-col class="pa-0 difficultyButtons">
           <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0 bb-0 bt-0">
-            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
-              Beginner Mode
-            </v-btn>
+            <router-link style="text-decoration: none; color:inherit" to="/game">
+              <v-btn
+                :ripple="false"
+                :class="unlocked ? 'animatedBtn' : ''"
+                variant="text"
+                elevation="0"
+                block>
+                Beginner Mode
+              </v-btn>
+            </router-link>
           </div>
           <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0 bb-0">
-            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
+            <router-link style="text-decoration: none; color:inherit" to="/game">
+              <v-btn
+              :ripple="false"
+              :class="unlocked ? 'animatedBtn' : ''"
+              variant="text"
+              elevation="0"
+              block>
               Intermediate Mode
             </v-btn>
+          </router-link>
           </div>
           <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0 bb-0">
-            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
+            <router-link style="text-decoration: none; color:inherit" to="/game">
+              <v-btn
+              :ripple="false"
+              :class="unlocked ? 'animatedBtn' : ''"
+              variant="text"
+              elevation="0"
+              block>
               Expert Mode
             </v-btn>
+          </router-link>
           </div>
           <div class="boxHeight d-flex align-center justify-center font-weight-bold medium-text-color border br-0">
-            <v-btn :ripple="false" :class="unlocked ? 'animatedBtn' : ''" variant="text" elevation="0" block>
+            <router-link style="text-decoration: none; color:inherit" to="/game">
+              <v-btn
+              :ripple="false"
+              :class="unlocked ? 'animatedBtn' : ''"
+              variant="text"
+              elevation="0"
+              block>
               Custom Mode
             </v-btn>   
+          </router-link>
           </div>
         </v-col>
         <v-col cols="2" class="pa-0">
