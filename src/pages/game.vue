@@ -51,18 +51,9 @@ export default defineComponent({
     align-items: center;         // center horizontally
     justify-content: flex-start; // start from top
     gap: 1.5rem;                 // spacing between elements
-    min-height: 100%;            // fill available main height
     padding: 1rem;
-  }
-
-  
-  .actions button {
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    background-color: #27ae60;
-    color: white;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
   }
 
   .score {
@@ -93,11 +84,14 @@ export default defineComponent({
     display: flex;
     justify-content: center;
   } 
-
+ 
   .actions button {
-    padding: 8px 16px;
     margin: 5px;
-    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: #27ae60;
     color: white;
+    cursor: pointer;
   }
 </style>
